@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Hưng Huỳnh — Java Developer (FinTech)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Resume of Jin — Java Developer specializing in FinTech, distributed systems, microservices, PostgreSQL, SOLID, Clean Architecture, Event Sourcing." />
+  <style>
+    :root {
+      --fg: #0f172a;
+      --muted: #475569;
+      --accent: #0ea5e9;
+      --border: #e2e8f0;
+      --bg: #ffffff;
+      --heading: #0b1220;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Inter, Arial, sans-serif;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    header {
+      margin-bottom: 14px;
+    }
+
+    .header-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .header-grid .info {
+      display: grid;
+      gap: 6px;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      gap: 6px 16px;
+      margin-top: 6px;
+      color: var(--muted);
+    }
+
+    .contact div {
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      .contact {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      color: var(--heading);
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted var(--muted);
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .section h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--accent);
+      margin: 0 0 8px;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    .summary {
+      color: var(--fg);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 24px;
+    }
+
+    .skill-label {
+      font-weight: 700;
+    }
+
+    .role {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .role:last-child {
+      border-bottom: none;
+    }
+
+    .role h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .company {
+      color: var(--muted);
+    }
+
+    .bullets {
+      margin: 6px 0 0;
+      padding-left: 18px;
+    }
+
+    .bullets li {
+      margin: 3px 0;
+    }
+
+    .edu-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+    }
+
+    .edu-item h3 {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .tag {
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 700px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <div class="header-grid">
+        <div class="info">
+          <h1>Huỳnh Lê Hữu Hưng</h1>
+          <div class="subtitle">Java Developer</div>
+          <div class="contact">
+            <div>Phone: +84 961 561 682</div>
+            <div>Email: huuhung9822@gmail.com</div>
+            <div>LinkedIn: www.linkedin.com/in/hunghlh-dev</div>
+            <div>Location: Ho Chi Minh City, Vietnam</div>
+          </div>
+        </div>
+        <!-- <div class="avatar">
+      <img src="avatar.png" alt="Profile photo of Huỳnh Lê Hữu Hưng" />
+    </div> -->
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        FinTech-focused Java developer with <strong>5+ years</strong> building trading, accounting and payment platforms
+        (incl. blockchain).
+        Strong in <strong>microservices</strong> and <strong>PostgreSQL clustering</strong>, delivering resilient,
+        scalable distributed systems.
+      </p>
+      <ul class="bullets">
+        <li><strong>Architecture:</strong> SOLID, Clean Architecture, Event Sourcing</li>
+        <li><strong>Platforms:</strong> authentication/authorization, common libraries/services, Java agent for
+          distributed tracing</li>
+        <li><strong>Strengths:</strong> solution architecture leadership, mentoring, agile delivery</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Java 17</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span> <span
+          class="tag">SOLID</span><span class="tag">Clean Architecture</span><span class="tag">Event Sourcing</span>
+        <span class="tag">PostgreSQL</span><span class="tag">Kafka</span><span class="tag">gRPC</span> <span
+          class="tag">Redis</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span>
+        <span class="tag">Elasticsearch</span><span class="tag">Prometheus</span><span class="tag">Blockchain</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <div class="skill-label">Languages</div>
+          Java 17+, C, SQL
+        </div>
+        <div>
+          <div class="skill-label">Frameworks & Tools</div>
+          Spring, Netty, gRPC, Kafka, ActiveMQ, Redis
+        </div>
+        <div>
+          <div class="skill-label">Architecture</div>
+          SOLID, Clean Architecture, Event Sourcing, Microservices, Disruptor
+        </div>
+        <div>
+          <div class="skill-label">Databases</div>
+          PostgreSQL (clustering, performance), MySQL, Oracle, MongoDB
+        </div>
+        <div>
+          <div class="skill-label">Cloud & DevOps</div>
+          Kubernetes, GitLab CI/CD, Nexus
+        </div>
+        <div>
+          <div class="skill-label">Monitoring & Performance</div>
+          Java Microbenchmark Harness (JMH), JDK Mission Control (JMC), Elasticsearch, Prometheus, Grafana
+        </div>
+        <div>
+          <div class="skill-label">Testing & Quality</div>
+          JUnit, Mockito, SonarQube
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Work Experience</h2>
+      <article class="role">
+        <div>
+          <h3>
+            Senior Java Backend Software Developer
+            <span class="company">— NFTech</span>
+          </h3>
+          <ul class="bullets">
+            <li>Designed and implemented <strong>solution architecture</strong> for ecosystem-wide financial services.
+            </li>
+            <li>Led <strong>mentorship and training</strong> of junior developers, raising team performance and code
+              quality.</li>
+            <li>Contributed to <strong>system reliability and scalability</strong> in distributed financial
+              applications.</li>
+          </ul>
+        </div>
+        <div class="meta">04/2025 – 09/2025</div>
+      </article>
+
+      <article class="role">
+        <div>
+          <h3>
+            Java Backend Software Developer
+            <span class="company">— NFTech</span>
+          </h3>
+          <ul class="bullets">
+            <li>Designed and implemented a <strong>Common API Library</strong> using gRPC and Jetty to standardize
+              service communication.</li>
+            <li>Engineered <strong>PostgreSQL cluster solutions</strong> for high availability and optimized
+              performance.</li>
+            <li>Developed a Commission System serving over 500k users.</li>
+            <li>Built high-performance <strong>Trading System</strong> with Disruptor, large-scale <strong>Notification
+                System</strong>, and a <strong>WebSocket Gateway</strong> for massive concurrent connections.</li>
+            <li>Enhanced throughput and reduced latency in the <strong>Financial Accounting System</strong>.</li>
+            <li>Developed secure <strong>authentication/authorization systems</strong> with JWT and session management;
+              delivered reusable common services.</li>
+            <li>Implemented a <strong>Java agent for distributed tracing</strong>, improving observability across
+              microservices.</li>
+            <li>Proposed <strong>architectural solutions</strong> and collaborated closely with cross-functional teams.
+            </li>
+          </ul>
+        </div>
+        <div class="meta">04/2020 – 04/2025</div>
+      </article>
+
+      <article class="role">
+        <div>
+          <h3>
+            Intern, Java Backend Developer
+            <span class="company">— NFTech</span>
+          </h3>
+          <ul class="bullets">
+            <li>Supported testing and monitoring of the <strong>Financial Accounting System</strong> using Prometheus,
+              Elasticsearch, and Grafana.</li>
+            <li>Assisted in building a <strong>Payment Gateway System</strong> integrated with popular blockchains
+              (Bitcoin, Ethereum, Tron, Binance Smart Chain).</li>
+          </ul>
+        </div>
+        <div class="meta">07/2019 – 04/2020</div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div>
+          <h3>
+            Bachelor of Information Technology — University of Technology and
+            Education (HCMC)
+          </h3>
+        </div>
+        <div class="meta">06/2016 – 06/2020</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Additional</h2>
+      <p>
+        <strong>Soft Skills:</strong> Teamwork, problem-solving, leadership,
+        agile development
+      </p>
+      <p>
+        <strong>Interests:</strong> Trading, blockchain, finance, system design
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
